@@ -52,7 +52,7 @@ jobs:
           name: python-app
 
       - name: Verify files before deploy
-        run: ls -R backend
+        run: ls -R   # check files at root
 
       - name: Login to Azure
         uses: azure/login@v2
@@ -67,4 +67,4 @@ jobs:
         with:
           app-name: 'my-chatbot-backend'
           slot-name: 'production'
-          package: backend
+          package: .
