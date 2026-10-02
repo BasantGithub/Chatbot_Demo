@@ -21,7 +21,8 @@ function App() {
     setIsTyping(true);
 
     try {
-      const response = await fetch("http://localhost:5000/ask", {
+      //const response = await fetch("http://localhost:5000/ask", {  // Old local dev Server details
+      const response = await fetch("https://my-chatbot-backend-gnfbchh6b0fyd6hs.centralindia-01.azurewebsites.net/ask", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question }),
