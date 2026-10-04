@@ -2,3 +2,5 @@ openai
 flask
 flask-cors
 python-dotenv
+opencensus-ext-azure 
+opencensus-ext-flask
